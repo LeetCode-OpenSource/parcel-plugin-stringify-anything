@@ -8,7 +8,7 @@ class Stringify extends Asset {
   }
 
   async parse(string) {
-    this.code = `module.exports = \`${string}\``;
+    this.code = `module.exports = ${JSON.stringify(string)}`;
   }
 
   async generate() {
