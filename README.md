@@ -15,14 +15,15 @@ npm install parcel-plugin-stringify-anything --save-dev
 ```
 
 Then, specify the file types to import as string. (e.g., the Markdown file):
-
+###### package.json
 ```diff
 {
+  ...
 + "assetTypesToStringify": ["md"],
   "devDependencies": {
     "parcel-bundler": "^1.10.3",
     "parcel-plugin-stringify-anything": "^1.0.0"
   }
+  ...
 }
-
 ```
