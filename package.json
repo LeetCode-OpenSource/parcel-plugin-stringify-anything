@@ -1,0 +1,47 @@
+{
+  "name": "parcel-plugin-stringify-anything",
+  "version": "0.0.4",
+  "description": "Parcel plugin for importing any file types as string",
+  "main": "./src/index.js",
+  "scripts": {
+    "prettier": "prettier '@(src|demo)/**/*.@(js|html|json)' --write",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeetCode-OpenSource/parcel-plugin-stringify-anything.git"
+  },
+  "keywords": [
+    "parcel",
+    "parcel-bundler",
+    "parcel-plugin",
+    "stringify",
+    "string"
+  ],
+  "bugs": {
+    "url": "https://github.com/LeetCode-OpenSource/parcel-plugin-stringify-anything/issues"
+  },
+  "homepage": "https://github.com/LeetCode-OpenSource/parcel-plugin-stringify-anything#readme",
+  "author": "LeetCode front-end team",
+  "license": "MIT",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js|html|json}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "devDependencies": {
+    "husky": "^1.2.0",
+    "lint-staged": "^8.1.0",
+    "parcel-bundler": "^1.10.3",
+    "prettier": "1.15.3"
+  },
+  "peerDependencies": {
+    "parcel-bundler": "^1.x"
+  }
+}
