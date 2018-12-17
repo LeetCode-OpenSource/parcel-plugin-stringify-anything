@@ -6,12 +6,12 @@ Parcel plugin for importing any file types as string.
 ## Installation
 Using [yarn](https://yarnpkg.com/):
 ```bash
-yarn add parcel-plugin-stringify-anything --dev
+yarn add parcel-plugin-stringify-anything parcel-bundler --dev
 ```
 
 Or via [npm](https://docs.npmjs.com):
 ```bash
-npm install parcel-plugin-stringify-anything --save-dev
+npm install parcel-plugin-stringify-anything parcel-bundler --save-dev
 ```
 
 Then, specify the file types to import as string. (e.g., the Markdown file):
