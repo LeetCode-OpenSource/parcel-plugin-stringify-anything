@@ -1,6 +1,6 @@
 {
   "name": "parcel-plugin-stringify-anything",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Parcel plugin for importing any file types as string",
   "main": "./src/index.js",
   "scripts": {
